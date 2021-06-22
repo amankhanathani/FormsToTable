@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+    <div  class="top" style="text-align: center;" >
+        <h1 >Bijli Udhyog</h1>
+        <!-- <button style="background:#1AAB8A;">enter me</button>  -->
+        <h2>Always ready to supply ⚡</h2>
+     </div>
+     
+    <table class="content">
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit()" autocomplete="off" class="content" >
+                    <div>
+                        <label>Full Name</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Account Number</label>
+                        <input type="text" name="mobile" id="mobile" required>
+                    </div>
+                    <div>
+                        <label>Address</label>
+                        <input type="text" name="address" id="address">
+                    </div>
+                    <div>
+                        <label>Units Consumed</label>
+                        <input type="number" min="0" name="fees" id="fees">
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit" onclick="return foo();">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <!-- display -->
+                <table class="styled-table" id = "patientData" >
+                <!-- <table class="list" id = "patientData" > -->
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Account Number</th>
+                            <th>Address</th>
+                            <th>Fees</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div class ="pikachu">
+        <!-- <img src="images\happypikachu.png">  -->
+        <img src="https://img.icons8.com/color/48/000000/pikachu-pokemon.png"/>
+    </div>
+    <div class ="light">
+        <!-- <img src="https://img.icons8.com/plasticine/100/000000/lightning-bolt--v2.png"/> -->
+        <img src="https://img.icons8.com/plasticine/100/000000/lightning-bolt.png"/>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
